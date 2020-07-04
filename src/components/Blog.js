@@ -26,7 +26,6 @@ export const Blog = (props) => {
                                         </div>
                                     </div>
                                 </section>
-                                <Footer/>
                             </div>
                     )
 

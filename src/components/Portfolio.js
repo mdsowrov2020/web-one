@@ -123,8 +123,6 @@ export class Portfolio extends Component {
                </div>
             </section>
            </div>
-            
-            <Footer/>
             </>
         )
     }

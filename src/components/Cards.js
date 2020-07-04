@@ -41,7 +41,7 @@ export const Home_Banner_Right = (props) =>{
 
 export const Card_Five = (props) =>{
     return(
-        <div className="col-lg-4 digital_main px-3">
+        <div className="col-md-4 col-sm-4 digital_main my-4">
         <div className="digital_part">
             <div className="digital_image">
             <img src={props.imgsrc} />
@@ -60,7 +60,7 @@ export const Card_Five = (props) =>{
 
 export const Card_Six = (props) =>{
     return(
-        <div className="col-lg-4">
+        <div className="col-md-4 col-sm">
         <div className="choose_inner m-1">
         <div className="choose_image">
         <img src={props.imgsrc} />
@@ -76,7 +76,7 @@ export const Card_Six = (props) =>{
 
 export const Card_Seven = (props) =>{
     return(
-        <div className="col-lg-3">
+        <div className="col-md-3 col-sm my-4">
         <div className="card ">
             <div className="front">
             <img src={props.imgsrc} />
@@ -142,7 +142,7 @@ export const Service_Banner_Right = (props) =>{
 export const Card = (props) =>{
     return(
       
-        <div className="col-lg-4 px-2 my-4">
+        <div className="col-md-4 col-sm-4 px-2 my-4">
                 <div className="service_demo px-1">
                 <div className="service_demo_image">
                 <img src={props.imgsrc} />
@@ -160,7 +160,7 @@ export const Card = (props) =>{
 
 export const Card_Two = (props) =>{
     return(
-        <div className="col-lg-4 px-2 my-2">
+        <div className="col-md-4 col-sm-4 px-2 my-2">
         <div className="service_role_demo px-1">
         <div className="service_role_demo_image">
         <img src={props.imgsrc} />
@@ -175,7 +175,7 @@ export const Card_Two = (props) =>{
 
 export const Card_Three = (props) =>{
     return(
-        <div className="col-lg-3 px-2 my-4">
+        <div className="col-md-3 col-sm-3 px-2 my-4">
         <div className="data_demo px-1">
         <div className="service_demo_image">
         <img src={props.imgsrc} />
@@ -194,7 +194,7 @@ export const Card_Nine_Left = (props) =>{
     return(
         <>
         
-        <div className="col-lg-6">
+        <div className="col-md-6 col-sm-6">
         <div className="what_data_science">
             <div className="what_data_science_content">
                 <h2>{props.l_title}</h2>
@@ -216,7 +216,7 @@ export const Card_Nine_Left = (props) =>{
 export const Card_Nine_Right = (props) =>{
     return(
         <>
-        <div className="col-lg-6">
+        <div className="col-md-6 col-sm-6">
         <div className="data_science_role">
              <div className="data_science_role_content">
                  <h2>{props.r_title}</h2>
@@ -273,7 +273,7 @@ export const Price_Banner_Right = (props) =>{
 
 export const Card_Four = (props) =>{
     return(
-        <div className="col-lg-4  px-3 my-2">
+        <div className="col-md-4 col-sm-4  px-3 my-2">
         <div className="price_main_content text-center">
             <div className="price_left_inner price_common">
                 <div className="price_basic_head">
@@ -302,7 +302,7 @@ export const Card_Four = (props) =>{
 
 export const Card_Eight = (props) =>{
     return(
-        <div className="col-lg-4 px-3">
+        <div className="col-md-4 col-sm-4 px-3">
             <div className="price_digital_content my-2">
                         <div className="price_service_image">
                            <img src={props.imgsrc} />

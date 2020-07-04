@@ -13,7 +13,7 @@ export const Sidebar =(props) => {
     useEffect(()=>{
         
          const posts =blogPost.data;
-       setPosts(posts);
+         setPosts(posts);
     },[posts]);
     return (
 
@@ -43,37 +43,36 @@ export const Sidebar =(props) => {
                     <span>Recent Posts</span>
         </div>
         <div className="recent_post">
-        {posts.map(post=>{
-            return(
-
-                <NavLink  className="nav-link" key={post.id} to={`/blog/${post.id}`}>
-                 <div className="row justify-content-center ">
-               
-               <div className="col-lg-12">
-                       <div className="row" >
-                       
-                         <div className="col-lg-4">
-                           <div className="blog_right_image">
-                        <img src={post.imgsrc}/>
-                       </div>
-                           </div>
-                           <div className="col-lg-8">
-                           <div className="blog_right_content">
-                           <h3>{post.title}</h3>
-                           <span>Posted on {post.post_date}</span>
-                           </div>
-                           </div>
-                        
-                       </div>
-                   </div>
-              
-               </div>
-                </NavLink>
-              
         
-           
-            )
-        })}
+
+         {posts.map((post)=>{
+             return(
+                <NavLink  className="nav-link" key={post.id} to={`/blog/${post.id}`}>
+                  
+                <div className="row justify-content-center ">
+              
+              <div className="col-lg-12">
+                      <div className="row" >
+                      
+                        <div className="col-lg-4">
+                          <div className="blog_right_image">
+                       <img src={post.imgsrc}/>
+                      </div>
+                          </div>
+                          <div className="col-lg-8">
+                          <div className="blog_right_content">
+                          <h3>{post.title}</h3>
+                          <span>Posted on {post.post_date}</span>
+                          </div>
+                          </div>
+                       
+                      </div>
+                  </div>
+             
+              </div>
+               </NavLink>
+             )
+         })}
 
         </div>
         </Blog_Right>

@@ -100,7 +100,6 @@ export class Price extends Component{
                     </div>
                 </section>
                </div>
-               <Footer/>
             </div>
         </>
     )

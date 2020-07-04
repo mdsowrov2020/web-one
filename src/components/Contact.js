@@ -109,8 +109,6 @@ export class Contact extends Component {
 
                                 </div>
                             </div>
-                            
-                        <Footer/>
                         </section>
 
                     </div>
@@ -118,4 +116,3 @@ export class Contact extends Component {
     }
 }
 
-export default Contact

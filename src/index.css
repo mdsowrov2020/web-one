@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+ 
 
   
 
@@ -56,7 +57,10 @@ code {
   color: #484848;
 }
 
-
+.navbar-toggler-icon i{
+  color: #ee0c81 !important;
+  font-size: 25px;
+}
 .custom_nav{
  background-color:  #fff!important;
  width: 100%;
@@ -102,6 +106,12 @@ code {
 
 .bn_svg{
   background: #fff;
+}
+.banner_bg{
+  background-color: #fff;
+}
+.home_second_section{
+  background-color: #fff;
 }
 
 .left{
@@ -161,7 +171,7 @@ code {
   transition: .5s all;
   border-radius: 20px;
   padding: 40px 0px;
-  height: 530px;
+  /* height: 530px; */
   -webkit-box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
   -moz-box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
   box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
@@ -209,7 +219,7 @@ code {
 
 .digital_text_content{
   text-align: center;
-  margin: 40px 0px;
+  margin-top: 15px;
 }
 
 .digital_text_content h4{
@@ -222,11 +232,14 @@ code {
   font-size: 14px;
   padding: 0px 40px;
 }
-
-
+.choose_top_svg{
+  background-color: #fff;
+}
+.choose_main{
+  background-color: #fff;
+}
 .choose_inner_main{
   background-color:    #ee0c81 ;
-  position: relative;
 }
 
 .choose_image{
@@ -562,9 +575,9 @@ text-align: justify;
 
 
 /* ============================================== Team part css start================================== */
-.team_bg{
+/* .team_bg{
   height: 100vh;
-}
+} */
 .card{
   cursor: pointer;
   height: 380px;
@@ -803,12 +816,6 @@ box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
 }
 
 /* ================================================ contact part css start====================== */
-.contact_section{
-  height: 100vh;
-}
-.contact_left{
-  height: 100vh !important;
-}
 .contact_left_inner_content{
 text-align: center;
 padding-bottom: 30px;
@@ -996,6 +1003,10 @@ background-color: #ee0c81 ;
 
 
 /* ===============================================Blog Post css start======================= */
+/* 
+.blog_left_post{
+  position: fixed;
+} */
 .author span{
   font-size: 18px;
   font-weight: 400;
@@ -1097,7 +1108,7 @@ background-color: #ee0c81 ;
 }
 .blog_left_content span{
   color:  #949494 ;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .blog_right_content span{
@@ -1124,8 +1135,7 @@ background-color: #ee0c81 ;
   background-color:#E1DADD;
   height: 200px;
   padding: 60px 0px;
-  position: relative;
-  bottom: 0;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -1162,6 +1172,9 @@ background-color: #ee0c81 ;
 @media(max-width:575px){
   p{
     font-size: 12px !important;
+  }
+  .custom_nav{
+    position: fixed;
   }
   .all_header h1{
     font-size: 35px !important;
@@ -1286,3 +1299,107 @@ background-color: #ee0c81 ;
   }
   
 }
+@media(min-width:768px) and (max-width:991px){
+  .custom_nav{
+    position: fixed;
+  }
+  .all_header{
+    text-align: center;
+  }
+  .price_header{
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .service_role_content{
+text-align: center;
+  }
+  .service_role_content p{
+    padding: 0px 100px !important;
+    
+  }
+
+  .portfolio_header{
+    height: 100%;
+    padding-bottom: 20px;
+  }
+  .blog_right_image{
+    height: 200px !important;
+    width: 100% !important;
+  }
+  p{
+    font-size: 10px;
+  }
+
+  h4{
+    font-size: 15px;
+  }
+  .left{
+    padding: 0px 10px;
+    height: 100% !important;
+    text-align: center !important;
+  }
+  .left_inner_content p{
+    font-size: 15px !important;
+    padding: 0px 100px !important;
+  }
+  
+.digital_text_content p{
+  font-size: 10px;
+  /* padding: 0px 80px; */
+}
+.header_text p{
+  font-size: 10px;
+  /* padding: 0px 80px; */
+}
+.choose_text p{
+  font-size: 10px;
+  /* padding: 0px 100px !important; */
+  
+}
+.service_header{
+  height: 100%;
+}
+.digital_text_content h4{
+  font-size: 15px;
+}
+.digital_image {
+
+  height: 120px;
+  width: 120px;
+
+}
+.digital_image img{
+
+  top: 33%;
+  left: 34%;
+  height: 40px;
+  width: 40px;
+}
+.all-button .dm{
+  height: 35px !important;
+  width: 130px !important;
+  line-height: 17px !important;
+  border-radius: 30px !important;
+  font-size: 10px !important;
+}
+
+.choose_text h4{
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.choose_text p{
+  color: #f1f1f1f1;
+  font-size: 10px;
+  padding: 5px 10px;
+}
+
+.service_demo_text p{
+  padding: 0px 15px;
+}
+
+
+
+  }
+
+

@@ -9,13 +9,13 @@ export const  Post = (props) => {
         imgsrc:"",
         pera:""
     });
-    const [blogid,setBlogId] = useState('');
+    const [blogid, setBlogId] = useState('');
   
     useEffect(()=>{
         const blogid = props.match.params.blogid;
         const post = blogPost.data.find(post => post.id == blogid);
        setPost(post);
-       setBlogId(blogid)
+       setBlogId(blogid);
     },[post,props.match.params.blogid]);
 
     if(post.imgsrc == "") return null;

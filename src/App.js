@@ -31,7 +31,7 @@ function App() {
           <Route path="/price" component={Price} />
           <Route path="/portfolio" component={Portfolio} />
           <Route exact path="/blog/" component={BlogRedirection}/>
-          <Route exact path="/blog/:blogid" component={Blog} />
+          <Route path="/blog/:blogid" component={Blog} />
           <Route path="/contact" component={Contact} />
         </Switch>
         
@@ -39,6 +39,7 @@ function App() {
   
       <BackTop />
      
+      <Footer/>
       
     </React.Fragment>
   );
