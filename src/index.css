@@ -1170,6 +1170,10 @@ background-color: #ee0c81 ;
 
 /* ==============================================Responsive css start=========================== */
 @media(max-width:575px){
+  .right_form{
+    padding-bottom: 20px;
+    }
+    
   p{
     font-size: 12px !important;
   }
@@ -1300,6 +1304,10 @@ background-color: #ee0c81 ;
   
 }
 @media(min-width:768px) and (max-width:991px){
+  .right_form{
+    padding-bottom: 20px;
+    }
+    
   .custom_nav{
     position: fixed;
   }
