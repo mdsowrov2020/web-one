@@ -142,7 +142,7 @@ export const Service_Banner_Right = (props) =>{
 export const Card = (props) =>{
     return(
       
-        <div className="col-lg-4 px-2">
+        <div className="col-lg-4 px-2 my-4">
                 <div className="service_demo px-1">
                 <div className="service_demo_image">
                 <img src={props.imgsrc} />
@@ -160,7 +160,7 @@ export const Card = (props) =>{
 
 export const Card_Two = (props) =>{
     return(
-        <div className="col-lg-4 px-2 mt-4">
+        <div className="col-lg-4 px-2 my-2">
         <div className="service_role_demo px-1">
         <div className="service_role_demo_image">
         <img src={props.imgsrc} />
@@ -175,7 +175,7 @@ export const Card_Two = (props) =>{
 
 export const Card_Three = (props) =>{
     return(
-        <div className="col-lg-3 px-2">
+        <div className="col-lg-3 px-2 my-4">
         <div className="data_demo px-1">
         <div className="service_demo_image">
         <img src={props.imgsrc} />
