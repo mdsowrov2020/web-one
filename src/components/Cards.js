@@ -343,6 +343,58 @@ export const Portfolio_Banner_Right = (props) =>{
     
     )
 }
+
+
+export const Portfolio_Content = (props) =>{
+    return(
+       <>
+       
+       <div className="col-md-3 my-3 mix digital_marketing">
+        <div className="project_image">
+            <img src={props.img_dm_one}  className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix digital_marketing">
+        <div className="project_image">
+            <img src={props.img_dm_two} className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix digital_marketing">
+        <div className="project_image">
+            <img src={props.img_dm_three} className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix data_science">
+        <div className="project_image">
+            <img src={props.img_ds_one} className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix data_science">
+        <div className="project_image">
+            <img src={props.img_ds_two} className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix data_science">
+        <div className="project_image">
+            <img src={props.img_ds_three} className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix web">
+        <div className="project_image">
+            <img src={props.img_web_one} className="img-fluid"  />
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix web">
+        <div className="project_image">
+            <img src={props.img_web_two} className="img-fluid"  />
+        </div>
+    </div>
+       
+       </>
+
+    
+    )
+}
 //======================================== Blog part Start  =============================
 
 export const Blog_Left = (props) =>{

@@ -312,7 +312,7 @@ export const Sdata_Eight = [
 
 export const Portfolio_Banner_Left_Data = [
     {
-        heading : "Our Recent Projects",
+        heading : "Our Recent Projects"
     }
 ]
 
@@ -322,6 +322,20 @@ export const Portfolio_Banner_Right_Data = [
         imgsrc : PortfolioBanner
     }
 ]
+export const Portfolio_Content_Data= [
+    {
+        img_dm_one : ArmanSir,
+        img_dm_two : ArmanSir,
+        img_dm_three : ArmanSir,
+        img_ds_one : ArmanSir,
+        img_ds_two : ArmanSir,
+        img_ds_three : ArmanSir,
+        img_web_one : ArmanSir,
+        img_web_two : ArmanSir,
+    }
+]
+
+
 
 // ========================================== Portfolio part End========================
 

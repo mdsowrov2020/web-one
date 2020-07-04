@@ -846,10 +846,10 @@ padding-bottom: 30px;
   background-repeat: no-repeat !important;
 }
 
-
 .right_form{
-  height: 100vh;
+padding-bottom: 30px;
 }
+
 .custom_form{
   position: relative;
   top: 14%;

@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {Footer} from '../components/Footer';
-import {Portfolio_Banner_Left, Portfolio_Banner_Right} from './Cards';
-import {Portfolio_Banner_Left_Data, Portfolio_Banner_Right_Data} from './Data';
+import {Portfolio_Banner_Left, Portfolio_Banner_Right, Portfolio_Content} from './Cards';
+import {Portfolio_Banner_Left_Data, Portfolio_Banner_Right_Data, Portfolio_Content_Data} from './Data';
 import $ from 'jquery';
 import mixitup from 'mixitup';
 
@@ -76,46 +76,22 @@ export class Portfolio extends Component {
      
                  <div className="row project_main justify-content-center">
      
-                     <div className="col-md-3 my-3 mix digital_marketing">
-                         <div className="project_image">
-                             <img src={require('./images/model-1.jpeg')}  className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix digital_marketing">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix digital_marketing">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix data_science">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix data_science">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix data_science">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix web">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
-                     <div className="col-md-3 my-3 mix web">
-                         <div className="project_image">
-                             <img src={require('./images/seo.png')} className="img-fluid"  />
-                         </div>
-                     </div>
+                    {Portfolio_Content_Data.map((val)=>{
+                        return(
+                            <Portfolio_Content 
+                            
+                            img_dm_one = {val.img_dm_one}
+                            img_dm_two = {val.img_dm_two}
+                            img_dm_three = {val.img_dm_three}
+                            img_ds_one = {val.img_ds_one}
+                            img_ds_two = {val.img_ds_two}
+                            img_ds_three = {val.img_ds_three}
+                            img_web_one = {val.img_web_two}
+                            img_web_two = {val.img_web_two}
+                            
+                            />
+                        )
+                    })}
                      
                  </div>
      
