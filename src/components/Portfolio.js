@@ -1,6 +1,7 @@
-import React,{Component} from 'react';
+import React,{Component, useEffect, useState} from 'react';
 import {Footer} from '../components/Footer';
-import {Portfolio_Banner_Left, Portfolio_Banner_Right, Portfolio_Content} from './Cards';
+import {Button,Modal} from 'react-bootstrap';
+import {Portfolio_Banner_Left, Portfolio_Banner_Right, Portfolio_Content,Modal_Demo} from './Cards';
 import {Portfolio_Banner_Left_Data, Portfolio_Banner_Right_Data, Portfolio_Content_Data} from './Data';
 import $ from 'jquery';
 import mixitup from 'mixitup';
@@ -9,25 +10,25 @@ import mixitup from 'mixitup';
 
 
 
-export class Portfolio extends Component {
+export const  Portfolio = (props) => {    
+   useEffect(() => {
+    var containerEl = document.querySelector('.project_main');
 
-    componentDidMount(){
-        var containerEl = document.querySelector('.project_main');
+    var mixer = mixitup(containerEl);
+    $('.filtering').on( 'click', '.control', function() {
 
-        var mixer = mixitup(containerEl);
-        $('.filtering').on( 'click', '.control', function() {
-    
-            $(this).addClass('control-active').siblings().removeClass('control-active');
-    
-        });
-    }
+        $(this).addClass('control-active').siblings().removeClass('control-active');
 
+    });
+   }, [])
 
-    render() {
+   
+
+   
         return (
             <>
        
-       <section className="price_section py-5">
+       <section className="py-5">
                     <div className="portfolio_banner"> 
                     <div className="container">
                         <div className="row justify-content-center portfolio_content">
@@ -73,25 +74,84 @@ export class Portfolio extends Component {
                      </ul>
                  </div>
      
-     
+ 
                  <div className="row project_main justify-content-center">
      
-                    {Portfolio_Content_Data.map((val)=>{
-                        return(
-                            <Portfolio_Content 
-                            
-                            img_dm_one = {val.img_dm_one}
-                            img_dm_two = {val.img_dm_two}
-                            img_dm_three = {val.img_dm_three}
-                            img_ds_one = {val.img_ds_one}
-                            img_ds_two = {val.img_ds_two}
-                            img_ds_three = {val.img_ds_three}
-                            img_web_one = {val.img_web_two}
-                            img_web_two = {val.img_web_two}
-                            
-                            />
-                        )
-                    })}
+                 <div className="col-md-3 my-3 mix digital_marketing">
+        <div className="project_image" >
+          {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_dm_one} className="img-fluid"/>
+              )
+          })}
+         
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix digital_marketing">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_dm_two}  className="img-fluid"/>
+              )
+          })}
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix digital_marketing">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_dm_three}  className="img-fluid"/>
+              )
+          })}
+
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix data_science">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_ds_one}  className="img-fluid"/>
+              )
+          })}
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix data_science">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_ds_two}  className="img-fluid"/>
+              )
+          })}
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix data_science">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_ds_three}  className="img-fluid"/>
+              )
+          })}
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix web">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_web_one}  className="img-fluid"/>
+              )
+          })}
+        </div>
+    </div>
+    <div className="col-md-3 my-3 mix web">
+        <div className="project_image">
+        {Portfolio_Content_Data.map((val)=>{
+              return(
+                <img src={val.img_web_two}  className="img-fluid"/>
+              )
+          })}
+        </div>
+    </div>
+                    
                      
                  </div>
      
@@ -99,7 +159,8 @@ export class Portfolio extends Component {
                </div>
             </section>
            </div>
+           <Modal_Demo/>
             </>
         )
-    }
+    
 }

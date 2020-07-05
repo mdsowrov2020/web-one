@@ -57,6 +57,9 @@ code {
   color: #484848;
 }
 
+#mynav ul li.nav_active a{
+  color: #ee0c81 !important;
+}
 .navbar-toggler-icon i{
   color: #ee0c81 !important;
   font-size: 25px;
@@ -109,13 +112,14 @@ code {
 }
 .banner_bg{
   background-color: #fff;
+  height: 100vh;
 }
 .home_second_section{
   background-color: #fff;
 }
 
 .left{
-  height: 100vh !important;
+  height: 450px !important;
 }
 .left_inner_content{
   position: relative;
@@ -661,6 +665,9 @@ color:   #026dd8  !important;
 }
 
 /* =============================================== price part css start========================= */
+.price_section{
+  height: 100vh;
+}
 .price_digital_header h2{
   font-size: 30px;
   color: #484848;
@@ -725,7 +732,7 @@ box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
   height: 100%;
 }
 .price_header{
-  height: 100vh;
+  height: 450px;
 }
 
 .price_header_content{
@@ -967,12 +974,25 @@ background-color: #ee0c81 ;
   border-radius: 8px;
 }
 .project_image img{
+  position: relative;
   height: 200px;
   width: 100%;
   border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
 
 }
-
+/* .overlay{
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+} */
+.modal_bg{
+  background-color: tomato !important;
+}
 .control-active {
 
   background: #fff  !important;
@@ -1168,6 +1188,7 @@ background-color: #ee0c81 ;
 
 }
 
+
 /* ==============================================Responsive css start=========================== */
 @media(max-width:575px){
   .right_form{
@@ -1196,12 +1217,13 @@ background-color: #ee0c81 ;
     text-align: center !important;
   }
   .left_inner_content{
-    top: 8%;
+    top: 28%;
   }
   .service_header{
     height: 100%;
   }
   .service_header_content{
+    text-align: center;
     top: 8%;
   }
   .service_header_content h1{
@@ -1240,6 +1262,7 @@ background-color: #ee0c81 ;
   .price_header{
     padding: 40px 0px;
     height: 100%;
+    text-align: center;
   }
   .left_inner_content h1{
     font-size: 35px !important;
@@ -1249,7 +1272,8 @@ background-color: #ee0c81 ;
   }
   .portfolio_header{
     height: 100%;
-    padding: 40px 0px;
+    padding-bottom: 40px;
+    text-align: center;
   }
   .left_inner_content h5{
     font-size: 14px;
@@ -1316,7 +1340,10 @@ background-color: #ee0c81 ;
   }
   .price_header{
     height: 100%;
-    padding-bottom: 20px;
+  }
+  .price_header_content{
+    position: relative;
+   padding: 35px;
   }
   .service_role_content{
 text-align: center;

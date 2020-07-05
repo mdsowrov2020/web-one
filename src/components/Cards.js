@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React,{Component, useEffect, useState} from 'react';
 import {Link} from 'react-router-dom';
 import HomeBanner from './images/seo.png'
 
@@ -103,11 +103,6 @@ export const Card_Seven = (props) =>{
 
 
 //======================================== Service part start==========================
-
-
-
-
-
 export const Service_Banner_Left = (props) =>{
     return(
      
@@ -346,55 +341,48 @@ export const Portfolio_Banner_Right = (props) =>{
 
 
 export const Portfolio_Content = (props) =>{
+  
     return(
        <>
        
-       <div className="col-md-3 my-3 mix digital_marketing">
-        <div className="project_image">
-            <img src={props.img_dm_one}  className="img-fluid"  />
+      
+    <div className="row">
+        <div className="col-lg-12">
+          
+           
         </div>
     </div>
-    <div className="col-md-3 my-3 mix digital_marketing">
-        <div className="project_image">
-            <img src={props.img_dm_two} className="img-fluid"  />
-        </div>
-    </div>
-    <div className="col-md-3 my-3 mix digital_marketing">
-        <div className="project_image">
-            <img src={props.img_dm_three} className="img-fluid"  />
-        </div>
-    </div>
-    <div className="col-md-3 my-3 mix data_science">
-        <div className="project_image">
-            <img src={props.img_ds_one} className="img-fluid"  />
-        </div>
-    </div>
-    <div className="col-md-3 my-3 mix data_science">
-        <div className="project_image">
-            <img src={props.img_ds_two} className="img-fluid"  />
-        </div>
-    </div>
-    <div className="col-md-3 my-3 mix data_science">
-        <div className="project_image">
-            <img src={props.img_ds_three} className="img-fluid"  />
-        </div>
-    </div>
-    <div className="col-md-3 my-3 mix web">
-        <div className="project_image">
-            <img src={props.img_web_one} className="img-fluid"  />
-        </div>
-    </div>
-    <div className="col-md-3 my-3 mix web">
-        <div className="project_image">
-            <img src={props.img_web_two} className="img-fluid"  />
-        </div>
-    </div>
-       
        </>
 
     
     )
 }
+
+
+export const Modal_Demo = (props) =>{
+
+   return(
+    <>
+    
+    
+    
+    </>
+   )
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //======================================== Blog part Start  =============================
 
 export const Blog_Left = (props) =>{
