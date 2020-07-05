@@ -111,7 +111,7 @@ code {
   background: #fff;
 }
 .banner_bg{
-  background-color: #fff;
+ 
   height: 100vh;
 }
 .home_second_section{
@@ -1215,6 +1215,10 @@ background-color: #ee0c81 ;
     padding: 0px 10px;
     height: 100% !important;
     text-align: center !important;
+  }
+  .banner_bg{
+ 
+    height: 100%;
   }
   .left_inner_content{
     top: 28%;
