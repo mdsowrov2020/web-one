@@ -309,6 +309,12 @@ export const Sdata_Eight = [
 
 // ========================================== Portfolio part start========================
 
+export const Video_Data = [
+    {
+        video : "https://www.youtube.com/watch?v=z1JG_iGp9zs"
+    }
+]
+
 
 export const Portfolio_Banner_Left_Data = [
     {
