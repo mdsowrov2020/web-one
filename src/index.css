@@ -3,6 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+    /* font-family: 'Muli', sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
@@ -76,37 +77,56 @@ code {
   letter-spacing: 2px;
   font-weight: 400;
   transition: .5s all;
-  padding: 20px 10px !important;
+  padding: 20px 0px !important;
   text-transform: uppercase;
 }
 #mynav ul li {
   position: relative;
   display: block;
   overflow: hidden;
-  margin: 0px 6px;
+  margin: 0px 10px;
 }
 #mynav ul li ::after{
   position: absolute;
   content: '';
   transition: .3s all;
-  left: 0;
-  bottom: 100%;
-  height: 100%;
+  left: -100%;
+  bottom: 0;
+  height: 2px;
   width: 100%;
   background-color: #ee0c81;
   z-index: -1;
 
 }
 #mynav ul li:hover ::after{
-  bottom: 0;
+  left: 0;
 
 }
-#mynav ul li a:hover{
+/* #mynav ul li a:hover{
   color: #fff !important;
-}
+} */
 
 /*================================================ Hom page css start======================= */
+.animated{
+  animation: up-down 1.5s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
 
+@keyframes up-down{
+  0%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateY(-10px);
+  }
+}
 .bn_svg{
   background: #fff;
 }
@@ -823,6 +843,9 @@ box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
 }
 
 /* ================================================ contact part css start====================== */
+.contact_banner{
+  height: 100vh;
+}
 .contact_left_inner_content{
 text-align: center;
 padding-bottom: 30px;
@@ -906,6 +929,7 @@ padding-bottom: 30px;
   background: transparent !important;
   border-radius: 8px !important;
   border:1px solid #ee0c81;
+  outline: 0 !important;
 
 
 }
@@ -922,7 +946,7 @@ padding-bottom: 30px;
 /* ==============================================Portfolio part start=========================== */
 .portfolio_section{
   height: 100%;
- background-color: #ee0c81 ;
+ /* background-color: #ee0c81 ; */
 }
 .portfolio_main_svg{
 background-color: #ee0c81 ;
@@ -1047,7 +1071,6 @@ iframe{
 }
 
 .project_image{
-  background-color: #fff;
   border-radius: 8px;
 }
 .project_image img{
@@ -1056,24 +1079,25 @@ iframe{
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
-  overflow: hidden;
+  overflow: hidden !important;
 
 }
-/* .overlay{
+.overlay{
   position: absolute;
   top: 0;
   overflow: hidden;
+  border-radius: 8px;
   height: 100%;
-  width: 100%;
+  width: 90%;
   background-color: rgba(0,0,0,0.5);
-} */
+}
 .modal_bg{
   background-color: tomato !important;
 }
 .control-active {
 
-  background: #fff  !important;
-  color:#ee0c81 !important;
+  background: #ee0c81 !important;
+  color: #fff !important;
 }
 
 .control {
@@ -1085,8 +1109,8 @@ iframe{
   font-size: 14px;
   border-radius: 2px !important;
   background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color:#ee0c81;
+  border: 1px solid #ee0c81;
   font-weight: 400;
   transition: .5s;
 }
@@ -1230,7 +1254,7 @@ iframe{
 /* ================================================ Footer part start ======================== */
 .footer_section{
   background-color:#E1DADD;
-  height: 200px;
+  /* height: 200px; */
   padding: 60px 0px;
   width: 100%;
   overflow: hidden;
@@ -1268,6 +1292,28 @@ iframe{
 
 /* ==============================================Responsive css start=========================== */
 @media(max-width:575px){
+  .video-icon {
+    left: 55%;
+}
+.form_input{
+  /* padding: 30px 10px !important; */
+  height: 45px !important;
+}
+.contact_banner{
+  height: 100%;
+}
+.filter_bg {
+  padding: 0 !important;
+}
+.control {
+  height: 31px;
+  line-height: 29px;
+  width: 62px;
+  font-size: 11px;
+}
+.control span{
+  display: none !important;
+}
   .right_form{
     padding-bottom: 20px;
     }
@@ -1331,7 +1377,9 @@ iframe{
  top: 0;
  text-align: justify;
  }
- 
+ .price_image{
+   height: 100%;
+ }
  .data_science_role_content h2{
    font-size: 25px;
  
@@ -1369,7 +1417,10 @@ iframe{
     line-height: 45px;
     width: 150px;
   }
-
+  .custom_form{
+    position: unset;
+    top: 14%;
+  }
   .digital_main{
     margin: 10px 0px;
   }
@@ -1406,6 +1457,8 @@ iframe{
     height: 100px !important;
     width: 100% !important;
   }
+
+
   
 }
 @media(min-width:768px) and (max-width:991px){
@@ -1514,7 +1567,11 @@ text-align: center;
   padding: 0px 15px;
 }
 
+.overlay {
 
+  width: 83%;
+
+}
 
   }
 

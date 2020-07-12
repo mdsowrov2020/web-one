@@ -14,6 +14,10 @@ import mixitup from 'mixitup';
 
 
 export const  Portfolio = (props) => {    
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
    useEffect(() => {
     var containerEl = document.querySelector('.project_main');
 
@@ -93,7 +97,7 @@ export const  Portfolio = (props) => {
     </section>
            <div className="portfolio_svg">
            <section className=" mt-5 portfolio_section">
-           <svg className="portfolio_main_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,74.7C384,53,480,43,576,69.3C672,96,768,160,864,165.3C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+           {/* <svg className="portfolio_main_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,74.7C384,53,480,43,576,69.3C672,96,768,160,864,165.3C960,171,1056,117,1152,117.3C1248,117,1344,171,1392,197.3L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg> */}
                <div className="container"> 
                 <div className="row filtering text-center justify-content-center pb-3 my-3">
                      <ul className="filter_bg">
@@ -109,13 +113,13 @@ export const  Portfolio = (props) => {
  
                  <div className="row project_main justify-content-center" >
                    <div className="col-md-3 my-3 mix digital_marketing">
-        <div className="project_image" >
+        <div className="project_image"  onClick={handleShow}>
           {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_dm_one} className="img-fluid"/>
               )
           })}
-         
+         <div className="overlay"></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix digital_marketing">
@@ -190,6 +194,20 @@ export const  Portfolio = (props) => {
                </div>
             </section>
            </div>
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>Modal heading</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
+          </Button>
+        </Modal.Footer>
+      </Modal>
             </>
         )
     

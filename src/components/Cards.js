@@ -30,7 +30,7 @@ export const Home_Banner_Right = (props) =>{
      
                             
         <div className="right">
-            <img src={props.imgsrc}/>
+            <img src={props.imgsrc} className="img-fluid animated" />
         </div>
 
     
@@ -121,7 +121,7 @@ export const Service_Banner_Right = (props) =>{
      
                             
         <div className="service_image">
-              <img src={props.imgsrc} />                 
+              <img src={props.imgsrc} className="img-fluid animated" />                 
         </div>
 
     
@@ -255,7 +255,7 @@ export const Price_Banner_Right = (props) =>{
      
                             
         <div className="price_image">
-        <img src={props.imgsrc}/>
+        <img src={props.imgsrc} className="img-fluid animated"/>
     
     </div>
 
@@ -332,7 +332,7 @@ export const Portfolio_Banner_Right = (props) =>{
     return(
      
         <div className="portfolio_image">
-        <img src={props.imgsrc}/>
+        <img src={props.imgsrc} className="img-fluid animated"/>
     </div>
 
     
@@ -413,7 +413,7 @@ export const Blog_Right = (props) =>{
 export const Contact_Left = (props) =>{
     return(
         <div className="contact_left">
-                <img src={props.imgsrc}/>      
+                <img src={props.imgsrc} className="img-fluid animated"/>      
         </div>
     )
 }
