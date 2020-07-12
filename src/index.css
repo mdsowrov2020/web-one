@@ -1071,25 +1071,47 @@ iframe{
 }
 
 .project_image{
+  position: relative;
   border-radius: 8px;
+  height: 200px;
+  overflow: hidden !important;
 }
 .project_image img{
-  position: relative;
-  height: 200px;
+  transition: all .4s linear;
+  height: 100%;
   width: 100%;
   border-radius: 8px;
   cursor: pointer;
   overflow: hidden !important;
 
 }
+.project_image:hover .overlay{
+  left: 0;
+}
+.project_image:hover img{
+  transform: scale(1.2);
+}
 .overlay{
   position: absolute;
+  transition: all .4s linear;
   top: 0;
+  left: -100%;
+  cursor: pointer;
   overflow: hidden;
   border-radius: 8px;
   height: 100%;
-  width: 90%;
+  width: 100%;
   background-color: rgba(0,0,0,0.5);
+}
+
+.overlay .click{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 25px;
+  font-weight: 700;
+  transform: translate(-50%,-50%);
+  color: #fff;
 }
 .modal_bg{
   background-color: tomato !important;
@@ -1567,11 +1589,6 @@ text-align: center;
   padding: 0px 15px;
 }
 
-.overlay {
-
-  width: 83%;
-
-}
 
   }
 

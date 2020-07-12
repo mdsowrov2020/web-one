@@ -119,75 +119,79 @@ export const  Portfolio = (props) => {
                 <img src={val.img_dm_one} className="img-fluid"/>
               )
           })}
-         <div className="overlay"></div>
+         <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix digital_marketing">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_dm_two}  className="img-fluid"/>
               )
           })}
+         <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix digital_marketing">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_dm_three}  className="img-fluid"/>
               )
           })}
-
+         <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix data_science">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_ds_one}  className="img-fluid"/>
               )
           })}
+            <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix data_science">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_ds_two}  className="img-fluid"/>
               )
           })}
+          <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix data_science">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_ds_three}  className="img-fluid"/>
               )
           })}
+          <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix web">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_web_one}  className="img-fluid"/>
               )
           })}
+        <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
     </div>
     <div className="col-md-3 my-3 mix web">
-        <div className="project_image">
+        <div className="project_image" onClick={handleShow}>
         {Portfolio_Content_Data.map((val)=>{
               return(
                 <img src={val.img_web_two}  className="img-fluid"/>
               )
           })}
+           <div className="overlay"><span className="click"><i class="fa fa-link" aria-hidden="true"></i></span></div>
         </div>
-    </div>
-                 
-                    
+    </div>      
                  </div>
      
      
@@ -196,15 +200,12 @@ export const  Portfolio = (props) => {
            </div>
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Yes, We’ll Work With You</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+        <Modal.Body>Send us your requirements we will happy to discuss with you in detail</Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
