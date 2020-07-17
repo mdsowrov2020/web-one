@@ -11,10 +11,10 @@ export const Home = () => {
     return(
     
         <>
-            <section className="banner_bg">
+            <section className=" mobile_height d-flex align-items-center">
                 <div className="container">
                     <div className="row justify-content-center">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 order-2 order-lg-1 d-flex align-items-center ">
                     {Home_Banner_Left_Data.map((val ,index)=>{
                           return(
 
@@ -31,7 +31,7 @@ export const Home = () => {
                     </div>
 
                     
-                        <div className="col-lg-6">
+                        <div className="col-lg-6 order-1 order-lg-2">
                         {Home_Banner_Right_Data.map((val, index)=>{
                           return(
                               <Home_Banner_Right

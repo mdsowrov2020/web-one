@@ -130,21 +130,18 @@ code {
 .bn_svg{
   background: #fff;
 }
-.banner_bg{
- 
-  height: 100vh;
-}
+
 .home_second_section{
   background-color: #fff;
 }
 
-.left{
+/* .left{
   height: 450px !important;
 }
 .left_inner_content{
   position: relative;
   top: 25%;
-}
+} */
 
 .left_inner_content h5{
   color:  #484848;
@@ -161,20 +158,6 @@ code {
 .left_inner_content p{
   font-size: 18px;
   color: #484848;
-}
-.right{
-  height: 450px !important;
-  overflow: hidden;
-}
-
-.right img{
-  position: relative;
-  top: 5%;
-  height: 100%;
-  width: 100%;
-  background-position: center !important;
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
 }
 
 /* Digital part css start */
@@ -311,7 +294,7 @@ code {
 }
 /* ================================================service page css start=========================== */
 
-.service_content{
+/* .service_content{
   height: 100%;
 }
 .service_header{
@@ -321,7 +304,7 @@ code {
 .service_header_content{
   position: relative;
   top: 15%;
-}
+} */
 /* .service_header_content h1{
   font-size: 55px;
   font-weight: bolder;
@@ -329,7 +312,7 @@ code {
   color: #ee0c81 ;
 } */
 
-.service_image{
+/* .service_image{
   height: 450px !important;
   width: 100% !important;
   overflow: hidden;
@@ -341,7 +324,7 @@ code {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-}
+} */
 
 .service_demo{
   border-radius: 20px;
@@ -685,9 +668,9 @@ color:   #026dd8  !important;
 }
 
 /* =============================================== price part css start========================= */
-.price_section{
+/* .price_section{
   height: 100vh;
-}
+} */
 .price_digital_header h2{
   font-size: 30px;
   color: #484848;
@@ -748,7 +731,8 @@ box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
 .price_svg{
   background-color: #ee0c81 ;
 }
-.price_content{
+
+/* .price_content{
   height: 100%;
 }
 .price_header{
@@ -758,7 +742,7 @@ box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
 .price_header_content{
   position: relative;
   top: 25%;
-}
+} */
 /* .price_header_content h1{
   font-size: 65px;
   font-weight: bolder;
@@ -766,20 +750,20 @@ box-shadow: 0px 0px 152px -21px rgba(227,224,227,1);
   color: #ee0c81 ;
 } */
 
-.price_image{
+/* .price_image{
   height: 450px;
   width: 100%;
   overflow: hidden;
  
-}
+} */
 
-.price_image img{
+/* .price_image img{
   height: 100%;
   width: 100%;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-}
+} */
 
 
 
@@ -1006,7 +990,7 @@ background-color: #ee0c81 ;
   color: #ee0c81 ;
 } */
 
-.portfolio_image{
+/* .portfolio_image{
   height: 450px;
   width: 100%;
   overflow: hidden;
@@ -1019,7 +1003,7 @@ background-color: #ee0c81 ;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-}
+} */
 
 .mfp-iframe-scaler{
   height: 100% !important;
@@ -1314,6 +1298,11 @@ iframe{
 
 /* ==============================================Responsive css start=========================== */
 @media(max-width:575px){
+  .all-button a {
+    height: 37px;
+    line-height: 34px;
+    width: 150px;
+}
   .video-icon {
     left: 55%;
 }
@@ -1365,9 +1354,9 @@ iframe{
  
     height: 100%;
   }
-  .left_inner_content{
-    top: 28%;
-  }
+ .left_inner_content p{
+   display: none;
+ }
   .service_header{
     height: 100%;
   }
@@ -1399,9 +1388,7 @@ iframe{
  top: 0;
  text-align: justify;
  }
- .price_image{
-   height: 100%;
- }
+ 
  .data_science_role_content h2{
    font-size: 25px;
  
@@ -1409,11 +1396,11 @@ iframe{
   .service_role_content{
     text-align: center;
   }
-
+.mobile_height{
+  height: 100vh;
+}
   .price_header{
-    padding: 40px 0px;
-    height: 100%;
-    text-align: center;
+    text-align: center !important;
   }
   .left_inner_content h1{
     font-size: 35px !important;

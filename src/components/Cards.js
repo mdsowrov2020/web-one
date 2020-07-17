@@ -106,7 +106,7 @@ export const Card_Seven = (props) =>{
 export const Service_Banner_Left = (props) =>{
     return(
      
-        <div className="service_header text-left">
+        <div className="service_header">
         <div className="service_header_content all_header">
         <h1>{props.heading}</h1>
         </div>

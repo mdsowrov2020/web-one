@@ -36,25 +36,15 @@ export const  Portfolio = (props) => {
   
 
    }, []);
-
-   var settings = {
-       infinite : true,
-       arrows :false,
-       slidesToShow: 1,
-       slideToScroll : 4
-   }
-
-   
-
-   
+ 
         return (
             <>
        
-       <section className="py-5">
-                    <div className="portfolio_banner"> 
+       <section className=" mobile_height d-flex align-items-center">
+                 
                     <div className="container">
-                        <div className="row justify-content-center portfolio_content">
-                            <div className="col-lg-6">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-6 order-2 order-lg-1  d-flex align-items-center">
                             {Portfolio_Banner_Left_Data.map((val)=>{
                                 return(
                                     <Portfolio_Banner_Left
@@ -65,7 +55,7 @@ export const  Portfolio = (props) => {
                                 )
                             })}
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 order-1 order-lg-2">
                                 {Portfolio_Banner_Right_Data.map((val)=>{
                                     return(
                                         <Portfolio_Banner_Right
@@ -78,7 +68,7 @@ export const  Portfolio = (props) => {
                             </div>
                         </div>
                     </div>
-                     </div>
+                
                 </section>
         <section id="video" class="py-5" style={{ backgroundImage: `url(${require("./images/seo.png")})` }}>
         <div class="container">

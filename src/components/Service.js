@@ -9,12 +9,11 @@ import {Sdata, Sdata_Two, Sdata_Three,Sdata_Nine_Left,Sdata_Nine_Right, Service_
 export class Service extends Component {
     render() {
         return (
-            <div>
-            <section className="service_section py-5">
-                   <div className="service_banner"> 
+            <>
+            <section className="mobile_height  d-flex align-items-center">
                    <div className="container">
-                       <div className="row justify-content-center service_content">
-                           <div className="col-lg-6 text-left">
+                       <div className="row justify-content-center">
+                           <div className="col-lg-6 order-2 order-lg-1 d-flex align-items-center">
                              {Service_Banner_Left_Data.map((val, index)=>{
                                  return(
                                      <Service_Banner_Left
@@ -25,7 +24,7 @@ export class Service extends Component {
                                  )
                              })}
                            </div>
-                           <div className="col-lg-6">
+                           <div className="col-lg-6 order-1 order-lg-2">
                                {Service_Banner_Right_Data.map((val, index)=>{
                                    return(
                                        <Service_Banner_Right
@@ -38,11 +37,11 @@ export class Service extends Component {
                            </div>
                        </div>
                    </div>
-                    </div>
+                    
                </section>
-               <section className="py-5">
+               <section className="d-flex align-items-center py-5">
                    <div className="container">
-                       <div className="row justify-content-center">
+                       <div className="row justify-content-center mt-4">
                           {Sdata.map((val, index) =>{
                               return(
                                 <Card 
@@ -181,7 +180,7 @@ export class Service extends Component {
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f4f4f4f4" fillOpacity="1" d="M0,64L120,74.7C240,85,480,107,720,106.7C960,
                107,1200,85,1320,74.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg>
                 </div>
-       </div>
+       </>
         )
        
     }

@@ -214,7 +214,7 @@ export const Sdata_Nine_Right = [
 
 export const Price_Banner_Left_Data = [
     {
-        heading : "Pricing Plans",
+        heading : "Our Pricing Plans",
     }
 ]
 

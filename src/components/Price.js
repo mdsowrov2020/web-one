@@ -9,12 +9,12 @@ export class Price extends Component{
    render(){
     return(
         <>
-            <div>
-                <section className="price_section">
-                    <div className="price_banner"> 
+          
+                <section className="mobile_height d-flex align-items-center">
+                 
                     <div className="container">
-                        <div className="row justify-content-center price_content">
-                            <div className="col-lg-6">
+                        <div className="row justify-content-center">
+                            <div className="col-lg-6 order-2 order-lg-1  d-flex align-items-center">
                                     {Price_Banner_Left_Data.map((val,index)=>{
                                         return(
                                             <Price_Banner_Left
@@ -25,7 +25,7 @@ export class Price extends Component{
                                         )
                                     })}
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-6  order-1 order-lg-2">
                                 {Price_Banner_Right_Data.map((val , index)=>{
                                     return(
                                         <Price_Banner_Right
@@ -38,9 +38,9 @@ export class Price extends Component{
                             </div>
                         </div>
                     </div>
-                     </div>
+                    
                 </section>
-                <section>
+                <section className="py-5">
                     <div className="container">
                     <div className="row justify-content-center pb-5">
                            <div className="col-lg-6 text-center">
@@ -100,7 +100,7 @@ export class Price extends Component{
                     </div>
                 </section>
                </div>
-            </div>
+  
         </>
     )
    }
