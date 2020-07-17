@@ -359,12 +359,12 @@ export const Portfolio_Content = (props) =>{
 }
 
 
-export const Modal_Demo = (props) =>{
+export const LatestProject = (props) =>{
 
    return(
     <>
     
-    
+    <div className=''></div>
     
     </>
    )

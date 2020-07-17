@@ -21,24 +21,17 @@ const BlogRedirection = () => (
 function App() {
   return (
     <React.Fragment>
-     
-      <Router>
       <Menu />
         <Switch>
-
           <Route exact path="/"  component={Home} />
-          <Route path="/services" component={Service} />
-          <Route path="/price" component={Price} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route exact path="/services" component={Service} />
+          <Route exact path="/price" component={Price} />
+          <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/blog/" component={BlogRedirection}/>
-          <Route path="/blog/:blogid" component={Blog} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/blog/:blogid" component={Blog} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
-        
-      </Router>
-  
       <BackTop />
-     
       <Footer/>
       
     </React.Fragment>
