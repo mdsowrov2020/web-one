@@ -1249,14 +1249,16 @@ iframe {
 
 /* ================================================ Footer part start ======================== */
 .footer_section {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to top,
     #012534,
     #003a50,
     #00506f,
     #02668f,
     #0b7eb0
-  );
+  ); */
+
+  background-color: #012534;
   /* height: 200px; */
   padding: 60px 0px;
   width: 100%;
