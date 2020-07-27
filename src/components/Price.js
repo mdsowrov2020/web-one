@@ -77,7 +77,7 @@ export class Price extends Component {
             <div className='container'>
               <div className='row justify-content-center pb-5'>
                 <div className='col-lg-6 text-center'>
-                  <div className='service_role_header'>
+                  <div className='price_role_header'>
                     <h2>Digital Marketing plans</h2>
                     <p>
                       The world of marketing is changing. Marketing is shifting

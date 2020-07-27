@@ -22,7 +22,7 @@ export const Home = () => {
       <section className='mobile_height d-flex align-items-center'>
         <div className='container'>
           <div className='row justify-content-center'>
-            <div className='col-lg-6 order-2 order-lg-1 d-flex align-items-center '>
+            <div className='col-lg-6 order-1 order-lg-1 d-flex align-items-center '>
               {Home_Banner_Left_Data.map((val, index) => {
                 return (
                   <Home_Banner_Left
@@ -35,7 +35,7 @@ export const Home = () => {
               })}
             </div>
 
-            <div className='col-lg-6 order-1 order-lg-2'>
+            <div className='col-lg-6 order-2 order-lg-2'>
               {Home_Banner_Right_Data.map((val, index) => {
                 return <Home_Banner_Right key={index} imgsrc={val.imgsrc} />;
               })}
@@ -73,20 +73,7 @@ export const Home = () => {
         </div>
       </section>
 
-      <div className=''>
-        <svg
-          className='choose_top_svg'
-          xmlns='http://www.w3.org/2000/svg'
-          viewBox='0 0 1440 320'
-        >
-          <path
-            fill=' #012534 '
-            fillOpacity='1'
-            d='M0,160L80,176C160,
-            192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,
-            192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z'
-          ></path>
-        </svg>
+      <div>
         <section className='choose_main'>
           <div className='choose_inner_main'>
             <div className='container'>
@@ -112,15 +99,6 @@ export const Home = () => {
             </div>
           </div>
         </section>
-        <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'>
-          <path
-            fill='  #012534 '
-            fillOpacity='1'
-            d='M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,
-                138.7C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,
-                960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z'
-          ></path>
-        </svg>
       </div>
 
       <section className='py-5'>
