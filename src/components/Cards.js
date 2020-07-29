@@ -50,7 +50,7 @@ export const Card_Five = (props) => {
 
 export const Card_Six = (props) => {
   return (
-    <div className='col-md-4 col-sm'>
+    <div className='col-md-4  col-sm'>
       <div className='choose_inner m-1'>
         <div className='choose_image'>
           <img src={props.imgsrc} />
@@ -109,7 +109,7 @@ export const Service_Banner_Left = (props) => {
 export const Service_Banner_Right = (props) => {
   return (
     <div className='service_image'>
-      <img src={props.imgsrc} className='img-fluid animated' />
+      <img src={props.imgsrc} className='animated' />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Footer } from '../components/Footer';
 import { Card } from './Cards';
+import ServiceBanner from './images/service.jpg';
 import {
   Card_Two,
   Card_Three,
@@ -23,6 +24,10 @@ export class Service extends Component {
   render() {
     return (
       <>
+        {/* <section
+          className='service_image'
+          style={{ backgroundImage: `url(${require('./images/service.jpg')})` }}
+        ></section> */}
         <section className='mobile_height  d-flex align-items-center'>
           <div className='container'>
             <div className='row justify-content-center'>
@@ -43,6 +48,7 @@ export class Service extends Component {
             </div>
           </div>
         </section>
+
         <section className='d-flex align-items-center py-5'>
           <div className='container'>
             <div className='row justify-content-center mt-4'>
@@ -63,7 +69,7 @@ export class Service extends Component {
         <div className='service_role_svg py-5'>
           <section className='py-5 service_role_section'>
             <div className='container'>
-              <div className='row justify-content-center'>
+              {/* <div className='row justify-content-center'>
                 <div className='col-lg-6 text-center'>
                   <div className='service_role_header'>
                     <h2>Digital Marketing</h2>
@@ -74,7 +80,7 @@ export class Service extends Component {
                     <p>-Tom Fishburne</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
               <div className='row justify-content-center'>
                 <div className='col-lg-4 text-left'>
                   <div className='service_role'>

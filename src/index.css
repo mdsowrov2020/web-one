@@ -208,14 +208,17 @@ code {
 }
 
 .digital_image {
-  line-height: 80px;
+  line-height: 85px;
   height: 90px;
   width: 90px;
   margin: auto;
   overflow: hidden;
   transition: 0.5s all;
   border-radius: 50%;
-  animation: animate 4s linear infinite;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  /* animation: animate 4s linear infinite; */
 }
 
 .digital_image img {
@@ -234,7 +237,9 @@ code {
 }
 
 .digital_text_content h4 {
-  color: #01253494;
+  color: #012534;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -326,19 +331,20 @@ code {
   color: #ee0c81 ;
 } */
 
-/* .service_image{
-  height: 450px !important;
+.service_image {
+  height: 100% !important;
   width: 100% !important;
+  background-attachment: fixed !important;
+
   overflow: hidden;
- 
 }
-.service_image img{
+.service_image img {
   height: 100%;
   width: 100%;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-} */
+}
 
 .service_demo {
   border-radius: 20px;
@@ -353,12 +359,16 @@ code {
   position: relative;
   text-align: center;
   left: 50%;
-  line-height: 80px;
+  line-height: 85px;
   transform: translateX(-50%);
   height: 90px;
   width: 90px;
   bottom: 40px;
-  animation: animate 4s linear infinite;
+  background-color: #fff;
+  /* animation: animate 4s linear infinite; */
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   border-radius: 50%;
 }
 
